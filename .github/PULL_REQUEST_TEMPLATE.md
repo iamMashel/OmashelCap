@@ -1,19 +1,26 @@
-## What does this PR do?
+## Summary
 
-<!-- One-line summary -->
+<!-- What does this PR do? Why? Keep it to 2-3 bullets. -->
 
-## Type of change
+-
+-
 
+## Type
+
+- [ ] Feature
 - [ ] Bug fix
-- [ ] New feature (strategy, indicator, UI component)
 - [ ] Refactor
-- [ ] Infra / config
+- [ ] Docs
+- [ ] Chore
 
-## Checklist
+## Test plan
 
-- [ ] Tested on demo account (not live)
-- [ ] Circuit breaker limits verified
-- [ ] No API tokens or secrets in code
-- [ ] `uv run ruff check .` passes
-- [ ] `uv run mypy .` passes
-- [ ] Tests added/updated if applicable
+- [ ] Tested mock mode (`USE_MOCK=true`)
+- [ ] Tested live mode (`USE_MOCK=false`) if applicable
+- [ ] `uv run pytest tests/ -v` passes
+- [ ] Frontend builds without errors (`pnpm build`)
+- [ ] No secrets committed (check `.env` is gitignored)
+
+## Notes
+
+<!-- Anything a reviewer should know: edge cases, tradeoffs, follow-ups. -->
